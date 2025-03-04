@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  spark-master:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=master
+      - PYSPARK_PYTHON=/Users/mohammadansari/Developer/system-design-projects/pysparkkrapspy/bin/python
+      - PYSPARK_DRIVER_PYTHON=/Users/mohammadansari/Developer/system-design-projects/pysparkkrapspy/bin/python
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+
+  spark-worker:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - PYSPARK_PYTHON=/Users/mohammadansari/Developer/system-design-projects/pysparkkrapspy/bin/python
+      - PYSPARK_DRIVER_PYTHON=/Users/mohammadansari/Developer/system-design-projects/pysparkkrapspy/bin/python
+    depends_on:
+      - spark-master
