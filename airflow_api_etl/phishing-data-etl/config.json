@@ -1,0 +1,8 @@
+{
+    "aws_access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region": "YOUR_AWS_REGION",
+    "s3_bucket_name": "YOUR_S3_BUCKET_NAME",
+    "s3_data_prefix": "phishing_data/",
+    "log_level": "INFO"
+}
