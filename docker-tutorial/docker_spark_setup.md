@@ -1,4 +1,3 @@
-Sure, here's a step-by-step tutorial on setting up a machine learning project using Apache Spark, Docker, and Python.
 
 Step 1: Set Up Docker
 Install Docker: If you haven't already, install Docker from here.
