@@ -1,2 +1,9 @@
 /cursor-test
 /.venv
+.DS_Store
+.gitignore
+.gitignore
+/Users/mohammadansari/Developer/system-design-projects/mlflow_tutorial/mlruns
+/Users/mohammadansari/Developer/system-design-projects/mlflow_tutorial/mflopy
+/Users/mohammadansari/Developer/system-design-projects/mlflow_tutorial/mlartifacts
+/Users/mohammadansari/Developer/system-design-projects/azeempy
